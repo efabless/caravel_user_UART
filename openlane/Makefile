@@ -81,9 +81,8 @@ else
 		$(OPENLANE_IMAGE_NAME) sh -c $(openlane_cmd)
 endif
 	@mkdir -p ../signoff/$*/
-	@cp ./$*/runs/$*/OPENLANE_VERSION ../signoff/$*/
+	@cp ./$*/runs/$*/OPENLANE_COMMIT ../signoff/$*/
 	@cp ./$*/runs/$*/PDK_SOURCES ../signoff/$*/
-	@cp ./$*/runs/$*/reports/*.csv ../signoff/$*/
 
 .PHONY: enable-openlane-pdk
 enable-openlane-pdk:
