@@ -122,7 +122,7 @@
 + wbs_dat_o[28] wbs_dat_o[29] wbs_dat_o[2] wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3]
 + wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6] wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0]
 + wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
-Xuart_macro io_oeb[5] io_oeb[6] user_irq[0] io_in[5] io_out[6] vccd1 vssd1 wb_clk_i
+Xuart_macro io_oeb[7] io_oeb[8] user_irq[0] io_in[7] io_out[8] vccd1 vssd1 wb_clk_i
 + wb_rst_i wbs_ack_o wbs_adr_i[0] wbs_adr_i[10] wbs_adr_i[11] wbs_adr_i[12] wbs_adr_i[13]
 + wbs_adr_i[14] wbs_adr_i[15] wbs_adr_i[16] wbs_adr_i[17] wbs_adr_i[18] wbs_adr_i[19]
 + wbs_adr_i[1] wbs_adr_i[20] wbs_adr_i[21] wbs_adr_i[22] wbs_adr_i[23] wbs_adr_i[24]

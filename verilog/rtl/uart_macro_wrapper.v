@@ -27,10 +27,6 @@ module uart_macro_wrapper (
 
     // Instantiate EF_UART with Wishbone interface
     EF_UART_WB uart (
-`ifdef USE_POWER_PINS
-        .vpwr(vccd1),
-        .vgnd(vssd1),
-`endif
         .clk_i(wb_clk_i),
         .rst_i(wb_rst_i),
         .adr_i(wbs_adr_i),

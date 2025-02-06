@@ -97,10 +97,10 @@ uart_macro_wrapper uart_macro (
         .wbs_adr_i(wbs_adr_i),
         .wbs_ack_o(wbs_ack_o),
         .wbs_dat_o(wbs_dat_o),
-        .uart_rx(io_in[5]),
-        .uart_tx(io_out[6]),
+        .uart_rx(io_in[7]),
+        .uart_tx(io_out[8]),
         .uart_irq(user_irq[0]),
-        .io_oeb(io_oeb[6:5])
+        .io_oeb(io_oeb[8:7])
     );
 
 endmodule	// user_project_wrapper
