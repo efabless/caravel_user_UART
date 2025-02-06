@@ -40,23 +40,12 @@
 `define GPIO_MODE_USER_STD_OUT_MONITORED   13'h1802
 `define GPIO_MODE_USER_STD_ANALOG          13'h000a
 
-// Configure GPIO 5 as UART RX (input with pullup)
-`define USER_CONFIG_GPIO_5_INIT  `GPIO_MODE_USER_STD_INPUT_PULLUP
-// Configure GPIO 6 as UART TX (output)
-`define USER_CONFIG_GPIO_6_INIT  `GPIO_MODE_USER_STD_OUTPUT
-
-// The values below can be any of the standard types defined above,
-// or they can be any 13-bit value if the user wants a non-standard
-// startup state for the GPIO.  By default, every GPIO from 5 to 37
-// is set to power up as an input controlled by the management SoC.
-// Users may want to redefine these so that the user project powers
-// up in a state that can be used immediately without depending on
-// the management SoC to run a startup program to configure the GPIOs.
-
 `define USER_CONFIG_GPIO_5_INIT  `GPIO_MODE_MGMT_STD_OUTPUT
 `define USER_CONFIG_GPIO_6_INIT  `GPIO_MODE_MGMT_STD_OUTPUT
-`define USER_CONFIG_GPIO_7_INIT  `GPIO_MODE_MGMT_STD_OUTPUT
-`define USER_CONFIG_GPIO_8_INIT  `GPIO_MODE_MGMT_STD_OUTPUT
+`define USER_CONFIG_GPIO_5_INIT  `GPIO_MODE_MGMT_STD_OUTPUT
+`define USER_CONFIG_GPIO_6_INIT  `GPIO_MODE_MGMT_STD_OUTPUT
+`define USER_CONFIG_GPIO_7_INIT  `GPIO_MODE_USER_STD_INPUT_PULLUP
+`define USER_CONFIG_GPIO_8_INIT  `GPIO_MODE_USER_STD_OUTPUT
 `define USER_CONFIG_GPIO_9_INIT  `GPIO_MODE_MGMT_STD_OUTPUT
 `define USER_CONFIG_GPIO_10_INIT `GPIO_MODE_MGMT_STD_OUTPUT
 `define USER_CONFIG_GPIO_11_INIT `GPIO_MODE_MGMT_STD_OUTPUT
